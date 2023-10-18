@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Logo Generator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Logo Generator</h1>
+        <form id="logoForm">
+            <label for="text">Text (Up to 3 characters):</label>
+            <input type="text" id="text" name="text" maxlength="3" required>
+            <label for="textColor">Text Color (Keyword or Hexadecimal):</label>
+            <input type="text" id="textColor" name="textColor" required>
+            <label for="shape">Select a Shape:</label>
+            <select id="shape" name="shape">
+                <option value="circle">Circle</option>
+                <option value="triangle">Triangle</option>
+                <option value="square">Square</option>
+            </select>
+            <label for="shapeColor">Shape Color (Keyword or Hexadecimal):</label>
+            <input type="text" id="shapeColor" name="shapeColor" required>
+            <button type="submit">Generate Logo</button>
+        </form>
+        <div id="logoContainer">
+            <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+                <!-- Generated SVG content will be inserted here -->
+            </svg>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
